@@ -24,7 +24,7 @@ public class Main extends Application {
             Canvas c = new Canvas(s.getWidth() * s.getCornerSize(), s.getHeight() * s.getCornerSize());
             GraphicsContext gc = c.getGraphicsContext2D();
             root.getChildren().add(c);
-
+            //k
             //here we do the animation of the snake.
             AnimationTimer timer = new AnimationTimer() {
                 long lastTick = 0;
