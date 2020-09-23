@@ -8,7 +8,7 @@ public class Corner {
         this.x = x;
         this.y = y;
     }
-
+    //x get
     public int getX() {
         return x;
     }
