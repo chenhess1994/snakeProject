@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application implements ManagerGame {
-
+    //new new new
     Button startButton;
     Button exitButton;
     Snake s = new Snake();

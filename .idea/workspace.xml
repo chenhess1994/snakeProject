@@ -14,18 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Snake Project Push">
-      <change afterPath="$PROJECT_DIR$/src/SnakePj/controller/Mytimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SnakePj/image/SNAKE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SnakePj/main/ManagerGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snakeProject/META-INF/snakeProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snakeProject/SnakePj/controller/Corner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snakeProject/SnakePj/controller/Corner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snakeProject/SnakePj/controller/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snakeProject/SnakePj/controller/Snake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snakeProject/SnakePj/main/Main$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/snakeProject/SnakePj/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snakeProject/SnakePj/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SnakePj/controller/Corner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SnakePj/controller/Corner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SnakePj/controller/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SnakePj/controller/Snake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SnakePj/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SnakePj/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +132,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/snake" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -289,7 +279,13 @@
       <option name="presentableId" value="LOCAL‎00004" />
       <updated>1600883268018</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎00005" summary="Snake Project Push">
+      <created>1601137466993</created>
+      <option name="number" value="LOCAL‎00005" />
+      <option name="presentableId" value="LOCAL‎00005" />
+      <updated>1601137466993</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,10 +327,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="31" y="0" width="960" height="738" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1600883800705" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1601136363855">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1601137421317">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1601136363855" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1601137421317" />
     <state x="517" y="286" width="356" height="166" key="Github.CreateGistDialog" timestamp="1600881926020">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -347,22 +343,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="510" y="75" key="Github.UntrackedFilesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600880278594" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1601134736305">
+    <state width="1323" height="227" key="GridCell.Tab.0.bottom" timestamp="1601137641641">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601134736305" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1601134736305">
+    <state width="1323" height="227" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601137641641" />
+    <state width="1323" height="227" key="GridCell.Tab.0.center" timestamp="1601137641641">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1601134736305" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1601134736305">
+    <state width="1323" height="227" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1601137641641" />
+    <state width="1323" height="227" key="GridCell.Tab.0.left" timestamp="1601137641641">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1601134736305" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1601134736305">
+    <state width="1323" height="227" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1601137641641" />
+    <state width="1323" height="227" key="GridCell.Tab.0.right" timestamp="1601137641641">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1601134736305" />
+    <state width="1323" height="227" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1601137641641" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1600883180069">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -383,10 +379,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="268" y="26" width="1040" height="712" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601133949570" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1601136672644">
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1601137489420">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601136672644" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601137489420" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600883797432">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
