@@ -25,7 +25,7 @@ public class Snake {
     private Dir direction = Dir.left;
     private boolean gameOver = false;
     private Random rand = new Random();
-    private Corner corner=new Corner(20,20);
+    private Corner corner = new Corner(20, 20);
 
     public Dir getDirection() {
         return direction;
@@ -112,25 +112,25 @@ public class Snake {
 
         switch (direction) {
             case up:
-                snake.get(0).setY(snake.get(0).getY()-1);
-                if (snake.get(0).getY()< 0) {
+                snake.get(0).setY(snake.get(0).getY() - 1);
+                if (snake.get(0).getY() < 0) {
                     gameOver = true;
                 }
                 break;
             case down:
-                snake.get(0).setY(snake.get(0).getY()+1);
+                snake.get(0).setY(snake.get(0).getY() + 1);
                 if (snake.get(0).getY() > height) {
                     gameOver = true;
                 }
                 break;
             case left:
-                snake.get(0).setX(snake.get(0).getX()-1);
+                snake.get(0).setX(snake.get(0).getX() - 1);
                 if (snake.get(0).getX() < 0) {
                     gameOver = true;
                 }
                 break;
             case right:
-                snake.get(0).setX(snake.get(0).getX()+1);
+                snake.get(0).setX(snake.get(0).getX() + 1);
                 if (snake.get(0).getX() > width) {
                     gameOver = true;
                 }
@@ -156,8 +156,8 @@ public class Snake {
         gc.fillRect(0, 0, width * cornerSize, height * cornerSize);
 
         // score
-        gc.setFill(Color.RED);
-        gc.setFont(new Font("", 30));
+        gc.setFill(Color.WHITE);
+        gc.setFont(new Font("Ariel", 25));
         gc.fillText("Score: " + (speed - 6), 10, 30);
 
         // random foodcolor
@@ -180,7 +180,7 @@ public class Snake {
                 colorFoodSet = Color.ORANGE;
                 break;
             case 5:
-                colorFoodSet=Color.RED;
+                colorFoodSet = Color.RED;
         }
         gc.setFill(colorFoodSet);
         gc.fillOval(foodX * cornerSize, foodY * cornerSize, cornerSize, cornerSize);
@@ -198,27 +198,30 @@ public class Snake {
 
     // food
     public void newFood() {
-        start: while (true) {
-            foodX = rand.nextInt(width);
-            foodY = rand.nextInt(height);
+        start:
+        while (true) {
+            foodX = rand.nextInt(width-2);
+            foodY = rand.nextInt(height-2);
 
             for (Corner c : snake) {
                 if (c.getX() == foodX && c.getY() == foodY) {
                     continue start;
                 }
             }
-            foodColor = rand.nextInt(5);
+            foodColor = rand.nextInt(6);
             speed++;
             break;
         }
     }
-    public void controlTheSnake( Scene scene) {
+
+    public void controlTheSnake(Scene scene) {
         scene.addEventFilter(KeyEvent.KEY_PRESSED, key -> {
             if (key.getCode() == KeyCode.UP) {
                 setDirection(Dir.up);
             }
             if (key.getCode() == KeyCode.LEFT) {
-                setDirection(Dir.left);;
+                setDirection(Dir.left);
+                ;
             }
             if (key.getCode() == KeyCode.DOWN) {
                 setDirection(Dir.down);
@@ -226,6 +229,8 @@ public class Snake {
             if (key.getCode() == KeyCode.RIGHT) {
                 setDirection(Dir.right);
             }
+
         });
+
     }
 }

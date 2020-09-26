@@ -1,4 +1,5 @@
 package SnakePj.controller;
+
 //class that hold the point
 public class Corner {
     int x;
@@ -8,6 +9,7 @@ public class Corner {
         this.x = x;
         this.y = y;
     }
+
     //x get
     public int getX() {
         return x;

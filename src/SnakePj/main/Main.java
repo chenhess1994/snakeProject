@@ -1,49 +1,67 @@
 package SnakePj.main;
 
 import SnakePj.controller.Corner;
+import SnakePj.controller.Mytimer;
 import SnakePj.controller.Snake;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class Main extends Application {
 
+public class Main extends Application implements ManagerGame {
 
-    Snake s=new Snake();
+    Button startButton;
+    Button exitButton;
+    Snake s = new Snake();
 
-    public void start(Stage primaryStage) {
+    @Override
+    public void startGame(Stage primaryStage) {
         try {
             //create a circle of food.
             s.newFood();
+
+            //buttons
+            startButton = new Button("Restart");
+            startButton.setTextFill(Color.WHITE);
+            startButton.setTranslateX(((s.getWidth() * s.getCornerSize()) / 2));
+            startButton.setStyle("-fx-background-color:#003300;");
+            startButton.setMinWidth((s.getWidth() * s.getCornerSize()) / 2);
+            exitButton = new Button("Exit");
+            exitButton.setTextFill(Color.WHITE);
+            exitButton.setTranslateX(0);
+            exitButton.setStyle("-fx-background-color:#003300;");
+            exitButton.setMinWidth((s.getWidth() * s.getCornerSize()) / 2 - 3);
+
+            //buttons functionality
+            startButton.setOnMouseClicked(event -> {
+            restart(primaryStage);
+            });
+            exitButton.setOnMouseClicked(event -> {
+            exit(primaryStage);
+            });
+
             //create canvas with vbox.
             VBox root = new VBox();
+            GridPane gridPane = new GridPane();
             Canvas c = new Canvas(s.getWidth() * s.getCornerSize(), s.getHeight() * s.getCornerSize());
             GraphicsContext gc = c.getGraphicsContext2D();
+
+            //children
+            root.getChildren().add(gridPane);
+            gridPane.getChildren().addAll(exitButton, startButton);
             root.getChildren().add(c);
-            //k
-            //here we do the animation of the snake.
-            AnimationTimer timer = new AnimationTimer() {
-                long lastTick = 0;
 
-                public void handle(long now) {
-                    if (lastTick == 0) {
-                    lastTick = now;
-                    s.tick(gc);
-                    return;
-                }
-
-                 if (now - lastTick > 1000000000 / s.getSpeed()) {
-                    lastTick = now;
-                    s.tick(gc);
-                 }
-                }
-            };
-
-
+            //here we do the animation of the snake,and the gc.
+            AnimationTimer timer = new Mytimer(s, gc);
             timer.start();
 
             //create scene and put it on the canvas.
@@ -59,9 +77,31 @@ public class Main extends Application {
 
             primaryStage.setScene(scene);
             primaryStage.setTitle("SNAKE GAME");
+            primaryStage.setResizable(false);
             primaryStage.show();
-            
-        } catch (Exception e) { e.printStackTrace(); }
+            //
+            Image image=new Image("/SnakePj/image/snake.png");
+            primaryStage.getIcons().add(image);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void restart(Stage primaryStage) {
+            primaryStage.close();
+            Platform.runLater(() -> new Main().start(new Stage()));
+    }
+
+    @Override
+    public void exit(Stage primaryStage) {
+            primaryStage.close();
+    }
+
+
+    public void start(Stage primaryStage) {
+        startGame(primaryStage);
     }
 
     public static void main(String[] args) {
