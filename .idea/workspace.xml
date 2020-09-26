@@ -285,7 +285,13 @@
       <option name="presentableId" value="LOCAL‎00005" />
       <updated>1601137466993</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎00006" summary="Snake Project Push">
+      <created>1601137663421</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1601137663421</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,10 +385,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="268" y="26" width="1040" height="712" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601133949570" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1601137489420">
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1601137681091">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601137489420" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601137681091" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600883797432">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
